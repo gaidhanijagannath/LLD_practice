@@ -7,6 +7,6 @@ public enum Singleton {
         // Implementation of the method
         System.out.println("Executing some method in Singleton instance.");
 
-        // random commit
+        // random commit from personal laptop
     }
 }
