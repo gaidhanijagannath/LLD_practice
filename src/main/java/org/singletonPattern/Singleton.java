@@ -5,6 +5,8 @@ public final class Singleton {
 
     private Singleton() {
 
+        //this implementation is lazy loaded, thread safe.
+
         //to tackle the obj creation from reflection
         if (instance != null) {
             throw new RuntimeException("Use getInstance() method to create");

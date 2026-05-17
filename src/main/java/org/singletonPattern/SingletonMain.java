@@ -22,6 +22,14 @@ public class SingletonMain {
         org.singletonPattern.nonBreaking.Singleton singleton = org.singletonPattern.nonBreaking.Singleton.INSTANCE;
         singleton.someMethod();
 
+        SingletonBillPugh singletonBillPugh1 = SingletonBillPugh.getInstance();
+        System.out.println("Hashcode of singletonBillPugh: " + singletonBillPugh1.toString());
+
+        SingletonBillPugh singletonBillPugh2 = SingletonBillPugh.getInstance();
+        System.out.println("Hashcode of singletonBillPugh2: " + singletonBillPugh2.toString());
+
+        System.out.println("Are both instances the same? " + (singletonBillPugh1 == singletonBillPugh2));
+
 
     }
 }
